@@ -1,0 +1,23 @@
+{
+  "name": "GitView",
+  "short_name": "gitview",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "gitview",
+  "homepage_url": "https://github.com/gitview/gitview",
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "permissions": [ "file://*", "webRequest", "webRequestBlocking", "<all_urls>" ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "browser_action": {
+    "default_icon": {
+      "38": "icons/icon38.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
